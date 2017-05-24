@@ -1,0 +1,40 @@
+Package: seqriseR
+Version: 1.0.0
+Title: Extra Themes, Scales for 'ggplot2'
+Authors@R: c(
+	person("rc", "Lin", role = c("aut", "cre"), email = "linruichai@gmail.com",comment = "Code refer to the ggplot2 and ggthemes packages.")
+    )
+Depends:
+    R (>= 3.0.0),
+Imports:
+    assertthat,
+    colorspace,
+    ggplot2 (>= 2.2.0),
+    graphics,
+    grid,
+    methods,
+    scales
+Suggests:
+    extrafont,
+    knitr,
+    lintr,
+    maps,
+    mapproj,
+    pander,
+    rmarkdown,
+    testthat,
+    tidyverse
+VignetteBuilder: knitr
+Description: Some extra themes, and scales for 'ggplot2'.
+License: GPL-2
+URL: http://github.com/linruichai/seqriseR
+BugReports: http://github.com/linruichai/seqriseR
+Collate: 
+    'seqriseR-data.R'
+    'seqriseR-package.R'
+    'scale.R'
+    'theme-base.R'
+    'theme-classic.R'
+    'theme-grid.R'
+RoxygenNote: 6.0.1
+LazyData: true
