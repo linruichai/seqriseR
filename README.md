@@ -46,7 +46,7 @@ Theme resembling the base graphics in R, without top and right borders:
 p + theme_seqrise_classic()
 ```
 
-![plot of chunk classic theme](figure/classic_theme_1.png =500x)
+![plot of chunk classic theme](figure/classic_theme_1.png)
 
 Change bar colors using `scale_fill_seqrise`:
 
@@ -54,7 +54,7 @@ Change bar colors using `scale_fill_seqrise`:
 p + theme_seqrise_classic() + scale_fill_seqrise('seqrise9') 
 ```
 
-![plot of chunk classcic theme](figure/classic_theme_2.png =500x)
+![plot of chunk classcic theme](figure/classic_theme_2.png)
 
 Adjust graphic elements after applying classic seqrise theme:
 
@@ -66,7 +66,7 @@ p + theme_seqrise_classic(base_size = 14, base_family = 'Helvetica') +
     axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
-![plot of chunk classcic theme](figure/classic_theme_3.png =500x)
+![plot of chunk classcic theme](figure/classic_theme_3.png)
 
 ### Grid theme
 
@@ -76,7 +76,7 @@ A theme that approximates the style of classic theme, but with borders around an
 p + scale_fill_seqrise('seqrise9') + theme_seqrise_grid(base_size = 12) 
 ```
 
-![plot of chunk grid theme](figure/grid_theme.png =500x)
+![plot of chunk grid theme](figure/grid_theme.png)
 
 Both classic and grid themes accept ``base_size`` (default is 14) and ``base_family`` (default is 'Helvetica') as parameters.
 
@@ -93,7 +93,7 @@ p1 <- ggplot(mtcars) +
 p1 + scale_color_seqrise('seqrise9')
 ```
 
-![plot of chunk seqrise discrete colors](figure/discrete_color.png =500x)
+![plot of chunk seqrise discrete colors](figure/discrete_color.png)
 
 The following three color palletes can be accepted as parameters: ``'seqrise9'``, ``'seqrise9light'``, ``'seqrise18'``. The default is ``'seqrise9'``.
 
@@ -101,19 +101,19 @@ The following three color palletes can be accepted as parameters: ``'seqrise9'``
 show_col(seqrise_color_pal('seqrise9')(9))
 ```
 
-![plot of chunk seqrise discrete colors](figure/discrete_color_pal_1.png =500x)
+![plot of chunk seqrise discrete colors](figure/discrete_color_pal_1.png)
 
 ```r
 show_col(seqrise_color_pal('seqrise9light')(9))
 ```
 
-![plot of chunk seqrise discrete colors](figure/discrete_color_pal_2.png =500x)
+![plot of chunk seqrise discrete colors](figure/discrete_color_pal_2.png)
 
 ```r
 show_col(seqrise_color_pal('seqrise18')(18))
 ```
 
-![plot of chunk seqrise discrete colors](figure/discrete_color_pal_3.png =500x)
+![plot of chunk seqrise discrete colors](figure/discrete_color_pal_3.png)
 
 #### Sequential colors
 ```r
@@ -128,7 +128,7 @@ p2 <- ggplot(df, aes(x, y)) + geom_point(aes(colour = z2)) + theme_seqrise_class
 p2 + scale_color_gradient_seqrise('Blue')
 ```
 
-![plot of chunk seqrise sequential colors](figure/sequential_color_1.png =500x)
+![plot of chunk seqrise sequential colors](figure/sequential_color_1.png)
 
 
 ```r
@@ -145,7 +145,7 @@ p3 <- ggplot(m, aes(x = Var1, y = Var2, fill = value)) +
 p3 + scale_fill_gradient_seqrise('Blue')
 ```
 
-![plot of chunk seqrise sequential colors](figure/sequential_color_2.png =500x)
+![plot of chunk seqrise sequential colors](figure/sequential_color_2.png)
 
 So far, only the parameter ``'Blue'`` is accepted for sequential color palette.
 
@@ -155,7 +155,7 @@ So far, only the parameter ``'Blue'`` is accepted for sequential color palette.
 p2 + scale_color_gradient2_seqrise('Blue-White-Red')
 ```
 
-![plot of chunk seqrise diverging gradient colors](figure/diverging_gradient_color.png =500x)
+![plot of chunk seqrise diverging gradient colors](figure/diverging_gradient_color.png)
 
 The following three color palletes can be accepted as parameters: ``'Blue-White-Red'``, ``'Green-Black-Red'``, ``'Yellow-Orange-Red'``, and the default is ``'Blue-White-Red'``.
 
@@ -165,16 +165,16 @@ r <- sqrt(outer(x^2, x^2, '+'))
 image(r, col = seqrise_div_gradient_pal('Blue-White-Red')(seq(0, 1, length = 12)))
 ```
 
-![plot of chunk seqrise diverging gradient colors](figure/diverging_gradient_color_pal_1.png =500x)
+![plot of chunk seqrise diverging gradient colors](figure/diverging_gradient_color_pal_1.png)
 
 ```r
 image(r, col = seqrise_div_gradient_pal('Green-Black-Red')(seq(0, 1, length = 12)))
 ```
 
-![plot of chunk seqrise diverging gradient colors](figure/diverging_gradient_color_pal_2.png =500x)
+![plot of chunk seqrise diverging gradient colors](figure/diverging_gradient_color_pal_2.png)
 
 ```r
 image(r, col = seqrise_div_gradient_pal('Yellow-Orange-Red')(seq(0, 1, length = 12)))
 ```
 
-![plot of chunk seqrise diverging gradient colors](figure/diverging_gradient_color_pal_3.png =500x)
+![plot of chunk seqrise diverging gradient colors](figure/diverging_gradient_color_pal_3.png)
