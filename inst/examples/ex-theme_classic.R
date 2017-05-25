@@ -6,7 +6,7 @@ p <- ggplot(diamonds, aes(x = clarity, fill = cut)) + geom_bar() + scale_fill_se
 p + theme_seqrise_classic()
 p + theme_seqrise_classic(base_size = 16, base_family = 'Helvetica')
 p + theme_seqrise_classic() +
-	 theme(legend.title = element_blank(),
-			legend.position = c(0.9,0.9),
-			axis.text.x = element_text(angle = 45, hjust = 1),
+	theme(legend.title = element_blank(),
+		legend.position = c(0.9,0.9),
+		axis.text.x = element_text(angle = 45, hjust = 1),
 	)
