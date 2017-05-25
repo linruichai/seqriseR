@@ -56,7 +56,7 @@ p + theme_seqrise_classic() + scale_fill_seqrise('seqrise9')
 
 ![plot of chunk classcic theme](figure/classic_theme_2.png)
 
-Adjust graphic elements after applying classic seqrise theme:
+Adjust graphic elements after applying classic theme:
 
 ```r
 p + theme_seqrise_classic(base_size = 14, base_family = 'Helvetica') +
