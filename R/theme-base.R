@@ -12,6 +12,7 @@ theme_base <- function(base_size = 14, base_family = 'Helvetica'){
 	base <- theme(
 				legend.title = element_text(size = base_size, family = base_family),
 				legend.text = element_text(size = legend_font_size, family = base_family),
+				legend.key = element_rect(fill='transparent'),
 				axis.title.x = element_text(size = base_size, margin = margin(6,0,0,0), family = base_family),
 				axis.title.y = element_text(size = base_size, margin = margin(0,6,0,0), family = base_family),
 				axis.text.x = element_text(size = base_size, family = base_family),

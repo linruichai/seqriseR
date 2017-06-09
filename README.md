@@ -3,11 +3,11 @@
 ## Overview
 Some extra themes and scales for [ggplot](http://ggplot2.org), and they are used on [Seqrise](https://seqrise.com/zh/index) platform.
 
-### Themes 
+#### Themes 
 - ``theme_seqrise_classic``: a theme resembling the default base graphics in R. 
 - ``theme_seqrise_grid``: a theme based on R default graphics, but with borders and grids on backgroud.
 
-### Scales
+#### Scales
 
 - ``scale_colour_seqrise``, ``scale_fill_seqrise``: classical discrete colour palettes.
 - ``scale_colour_gradient_seqrise``,``scale_fill_gradient_seqrise``: sequential colour palettes.
@@ -56,7 +56,7 @@ p + theme_seqrise_classic() + scale_fill_seqrise('seqrise9')
 
 ![plot of chunk classcic theme](figure/classic_theme_2.png)
 
-Adjust graphic elements after applying classic theme:
+Adjust graphic elements after applying classic seqrise theme:
 
 ```r
 p + theme_seqrise_classic(base_size = 14, base_family = 'Helvetica') +
@@ -68,7 +68,7 @@ p + theme_seqrise_classic(base_size = 14, base_family = 'Helvetica') +
 
 ![plot of chunk classcic theme](figure/classic_theme_3.png)
 
-## Grid theme
+### Grid theme
 
 A theme that approximates the style of classic theme, but with borders around and add gray grid on background:
 
@@ -80,11 +80,11 @@ p + scale_fill_seqrise('seqrise9') + theme_seqrise_grid(base_size = 12)
 
 Both classic and grid themes accept ``base_size`` (default is 14) and ``base_family`` (default is 'Helvetica') as parameters.
 
-## Scales
+### Scales
 
 Some colour and fill scales used on [Seqrise](https://seqrise.com/zh/index) platform.
 
-### Discrete colors
+#### Discrete colors
 ```r
 p1 <- ggplot(mtcars) +
   geom_point(aes(x = wt, y = mpg, colour=factor(gear))) +
@@ -115,7 +115,7 @@ show_col(seqrise_color_pal('seqrise18')(18))
 
 ![plot of chunk seqrise discrete colors](figure/discrete_color_pal_3.png)
 
-### Sequential colors
+#### Sequential colors
 ```r
 df <- data.frame(
   x = runif(100),
@@ -129,7 +129,6 @@ p2 + scale_color_gradient_seqrise('Blue')
 ```
 
 ![plot of chunk seqrise sequential colors](figure/sequential_color_1.png)
-
 
 ```r
 mat = matrix(rnorm(96),8)
